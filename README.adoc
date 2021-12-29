@@ -23,8 +23,8 @@ Quelle Materialien https://www.hhu.de[hhu]
 
 
 WARNING: Sie müssen docker-compose hier up machen,
-damit die Software Rabbitmq im Container auf dem Port 15672 laufen kann, sonst kann das System nicht gestartet werden
-In Termina diesen Bewehl angeben
+damit die Software Rabbitmq im Container auf dem Port 15672 laufen kann, sonst kann das System nicht gestartet werden.
+In Terminal diesen Bewehl angeben
 
 [source,java]
 ----
