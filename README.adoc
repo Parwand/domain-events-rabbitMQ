@@ -1,5 +1,18 @@
 === Domänen Events:
 
+:icons: font
+:icon-set: fa
+:source-highlighter: rouge
+:experimental:
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+
 Eine Möglichkeit der Entkopplung von Komponenten ist die Verwendung von sogenannten Domain-Events.
 
 Ein Event ist die Vergegenständlichung einer Nachricht, die zwischen Komponenten ausgetauscht wird. Im Grunde folgen wir dem Prinzip der objektorientieren Modellierung. Wir modellieren etwas, das aus fachlicher Sicht wichtig ist, als eigenständiges Objekt.
