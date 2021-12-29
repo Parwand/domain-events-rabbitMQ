@@ -1,0 +1,33 @@
+=== Domänen Events:
+
+Eine Möglichkeit der Entkopplung von Komponenten ist die Verwendung von sogenannten Domain-Events.
+
+Ein Event ist die Vergegenständlichung einer Nachricht, die zwischen Komponenten ausgetauscht wird. Im Grunde folgen wir dem Prinzip der objektorientieren Modellierung. Wir modellieren etwas, das aus fachlicher Sicht wichtig ist, als eigenständiges Objekt.
+
+Quelle Materialien https://www.hhu.de[hhu]
+
+=== Wichtig
+
+
+WARNING: Sie müssen docker-compose hier up machen,
+damit die Software Rabbitmq im Container auf dem Port 15672 laufen kann, sonst kann das System nicht gestartet werden
+In Termina diesen Bewehl angeben
+
+[source,java]
+----
+docker-compose up -d
+----
+
+
+NOTE: Sie müssen keine Configuration von Rabbitmq in der application.yml Datei schreiben,
+da ich die default Configuration im Docker-Compose übernommen habe
+
+NOTE: Das Bestellungssystem [Producer] läuft dem Server-Port 8080 und das shipment System [Consumer] läuft dem Server-Port 8081
+
+==== [red]#Zugangsdaten von Rabbitmq#
+* Username: guest
+* Password: guest
+* Host: http://localhost:15672[localhost]
+
+
+© https://www.parwand.net[Parwand Alsino]

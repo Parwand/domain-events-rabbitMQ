@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Product</title>
+    <link href="../static/bootstrap.min.css" th:href="@{/bootstrap.min.css}" rel="stylesheet">
+</head>
+<body class="container">
+        <table class="table table-bordered" th:object="${product}">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Weight</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td th:text="${product.name}"></td>
+                    <td th:text="${product.weight}"></td>
+                    <td th:text="${product.price}"></td>
+                </tr>
+
+            </tbody>
+        </table>
+        <form method="post" action="/order" th:object="${product}">
+            <div>
+                <label for="id"></label>
+                <input type="hidden" id="id" th:field="*{id}">
+            </div>
+            <div>
+                <label for="name"></label>
+                <input type="hidden" id="name" th:field="*{name}">
+            </div>
+            <div>
+                <label for="weight"></label>
+                <input type="hidden" id="weight" th:field="*{weight}">
+            </div>
+            <div>
+                <label for="price"></label>
+                <input type="hidden" id="price" th:field="*{price}">
+            </div>
+            <button class="btn btn-sm btn-outline-primary">order the product</button>
+        </form>
+</body>
+</html>
