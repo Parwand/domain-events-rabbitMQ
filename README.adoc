@@ -35,7 +35,7 @@ docker-compose up -d
 NOTE: Sie müssen keine Configuration von Rabbitmq in der application.yml Datei schreiben,
 da ich die default Configuration im Docker-Compose übernommen habe
 
-NOTE: Das Bestellungssystem [Producer] läuft dem Server-Port 8080 und das shipment System [Consumer] läuft dem Server-Port 8081
+NOTE: Das Bestellungssystem [Producer] läuft auf dem Server-Port 8080 und das shipment System [Consumer] auf läuft dem Server-Port 8081
 
 ==== [red]#Zugangsdaten von Rabbitmq#
 * Username: guest
